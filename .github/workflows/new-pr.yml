@@ -19,7 +19,7 @@ jobs:
       env:
         URL: ${{env.API_URL}}
         USER: ${{ secrets.USER }}
-        PW: ${{ secrets.USER_CRED }}
+        PW: ${{ secrets.USER_CRED }}dsdsd
       run: |
         echo "Login health check"
         curl --connect-timeout 2 -sSf -k -u "$USER:$PW" $URL/login
